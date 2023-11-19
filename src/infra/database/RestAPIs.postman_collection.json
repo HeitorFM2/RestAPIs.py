@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "0ae47a18-8792-448b-88e3-d98209ec3f5e",
+		"name": "RestAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28176489"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/user/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7816bda8-6bd0-4d0e-b908-b5432dc8b5e2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bruno Oliveira\",\r\n    \"mail\": \"brunoli3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Heitor Melegate\",\r\n    \"mail\": \"heitorfm3@gmail.com.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/user/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7816bda8-6bd0-4d0e-b908-b5432dc8b5e2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/user/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7816bda8-6bd0-4d0e-b908-b5432dc8b5e2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "Get games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/games",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get game",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/game/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"game",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "52e5855b-dd3a-4838-9f3d-c9e954b1c38b"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Red Dead Redemption 2\",\r\n    \"description\": \"Red Dead Redemption 2: Immerse yourself in the Wild West as Arthur Morgan, navigating an expansive, morally complex world. Engage in intense gunfights, unravel a gripping story, and experience the harsh realities of the American frontier.\",\r\n    \"price\": 98\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/game",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update game",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"The Last of Us II\",\r\n    \"description\": \"The Last of Us Part II: A gripping post-apocalyptic tale of survival and revenge. Navigate a world fraught with danger, moral dilemmas, and stunning visuals as Ellie, in this emotionally charged sequel\",\r\n    \"price\": 120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/game/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"game",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "52e5855b-dd3a-4838-9f3d-c9e954b1c38b"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete game",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/game/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"game",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "e6cef59d-4d2e-4290-aeb3-4aba1c6099ba"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bought",
+			"item": [
+				{
+					"name": "Get boughts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/boughts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"boughts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get boughts by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/boughts/:user_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"boughts",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "6ebe26e6-89a2-4984-8bbe-023b8e9ccf06"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Purchase game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"6ebe26e6-89a2-4984-8bbe-023b8e9ccf06\",\r\n    \"game_id\": \"66b4ae6d-0e1d-4722-a066-b2ecf9cfdb14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/bought",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"bought"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
